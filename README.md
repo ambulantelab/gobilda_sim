@@ -41,6 +41,11 @@ make bash NAME=sim_test
 ```
 This will drop you into a bash shell inside the running Docker container. Your terminal prompt will change to something like root@container_id:/workspace#.
 
+If you get errors about not having the image locally, you can run the following command to manually pull the image from DockerHub (remember your platform):
+```bash
+docker pull ambulantelab/cpe416:lab4-arm
+```
+
 ### 6. Build and Source the Workspace (Inside the Container)
 From the bash shell inside your container, run:
 ```bash
